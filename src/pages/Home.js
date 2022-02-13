@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <React.Fragment>
-            <div className="container p-5" style={{maxHeight: "760px", minHeight: "760px"}}>
-                <div className="row" style={{paddingTop: "170px"}}>
+            <div className="container p-5" style={{height: "760px"}}>
+                <div className="row" style={{paddingTop: "250px"}}>
                     <div className="col-sm-12 col-md-12 col-lg-6">
                         <h1 style={{color: "green", fontSize: "15px", lineHeight: "2.9"}}>WELCOME</h1>
                         <h2 className="mt-3" style={{color: "blue", fontSize: "25px", lineHeight: "1.2"}}>We are a group of <span style={{color: "green"}}>women</span> in</h2>
@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </div>
         </div>
-        <Banner/>
+        <Banner />
         <Cards/>
      </React.Fragment>
     )
