@@ -4,8 +4,8 @@
     bottom: 50px;
 }
 
-.nav-el:active {
-    color: red;
+.active{
+    color:green;
 }
 
 
@@ -101,6 +101,7 @@ section {
     text-decoration: none;
     color: #fff;
 }
+
 .social-accounts {
     display: flex;
     justify-content: space-evenly;
