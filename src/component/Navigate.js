@@ -1,11 +1,12 @@
 import React from 'react'
+import '../App.css';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
 import Footer from './Footer';
 import Nav from './Nav';
 import Contact from '../pages/Contact';
-import Table from '../pages/Table';
+
 
 const Navigate = () => {
     return (
@@ -20,9 +21,6 @@ const Navigate = () => {
               </Route>
               <Route path="/contact">
                   <Contact/>
-              </Route>
-              <Route path="/data">
-                  <Table/>
               </Route>
             </Switch>
             <Footer/>

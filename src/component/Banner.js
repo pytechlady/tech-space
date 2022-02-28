@@ -1,24 +1,26 @@
-import React from 'react'
+import React from "react";
 
-const Banner = () => {
-    return (
-        <div>
-         <div style={{marginTop: "60px", backgroundColor: "#4c6b9f"}}>
-                <div className="container">
-                <center>
-                <h2 class="card-title text-light pt-5">Tech Space</h2>
-                <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Faucibus interdum posuere lorem ipsum 
-                dolor sit amet consectetur adipiscing. Nulla pellentesque 
-                dignissim enim sit amet venenatis urna cursus. Viverra tellus in 
-                hac habitasse platea dictumst vestibulum rhoncus est.</p>
-                <button style={{width: "120px"}} type="button" class="btn btn-primary mb-5">Read more</button>
-                </center>
-                </div>
-                </div>
+const Banner = ({ text, backgroundColor, marginTop }) => {
+  const style = {
+    backgroundColor: backgroundColor ? backgroundColor : "#4c6b9f",
+    marginTop: marginTop ? marginTop : "60px",
+  };
+  return (
+    <div>
+      <div style={style}>
+        <div className="container p-5">
+          <center>
+            <h2 className="card-title text-light">Tech Space</h2>
+            <p className="card-text text-light">
+              {text
+                ? text
+                : "We are showing people that engineering isn’t just the physics of how a transistor works. It’s using the technology, and being creative with it, and solving problems that people have or creating something beautiful with it. And we think that’s opening up engineering to a whole new group of people that maybe never would have thought that engineering was for them."}
+            </p>
+          </center>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

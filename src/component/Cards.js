@@ -1,49 +1,26 @@
-import React from 'react'
+import React from "react";
 
-const Cards = () => {
-    return (
-            <div class="card-group container mt-5 pb-5">
-  <div class="card me-3">
-    <div class="card-body">
-      <h5 class="card-title">Title 1</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.
-      Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.</p>
-    </div>
-  </div>
-  <div class="card me-3 border">
-    <div class="card-body">
-      <h5 class="card-title">Title 2</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.
-      Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.</p>
-    </div>
-  </div>
-  <div class="card me-3 border">
-    <div class="card-body">
-      <h5 class="card-title">Title 3</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.
-      Lorem ipsum dolor sit amet, consectetur adipiscing 
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Faucibus interdum posuere lorem ipsum dolor sit amet consectetur 
-      adipiscing.</p>
-    </div>
-  </div>
-</div>
-    )
-}
+const Cards = ({ text, heading, fontSize, textTransform }) => {
 
-export default Cards
+  const style = {
+    fontSize: fontSize ? fontSize : "24px",
+    textTransform: textTransform ? textTransform : "uppercase"
+
+  }
+  return (
+    <div className="card-group container mt-3 pb-3">
+      <div className="card">
+        <div className="card-body">
+          <div style={style} className="card-title">{heading ? heading : "Heading 1"}</div>
+          <p className="card-text">
+            {text
+              ? text
+              : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati, ea tempore voluptates consequatur quis exercitationem voluptatem impedit dolore recusandae officia atque mollitia. Fugiat veritatis tenetur est excepturi tempore ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati, ea tempore voluptates consequatur quis exercitationem voluptatem impedit dolore recusandae officia atque mollitia. Fugiat veritatis tenetur est excepturi tempore ex!"}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cards;
