@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = ({ text, backgroundColor, marginTop }) => {
   const style = {
-    backgroundColor: backgroundColor ? backgroundColor : "#4c6b9f",
+    backgroundColor: backgroundColor ? backgroundColor : "green",
     marginTop: marginTop ? marginTop : "60px",
   };
   return (

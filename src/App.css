@@ -102,6 +102,10 @@ section {
     color: #fff;
 }
 
+.active {
+    text-decoration: none;
+}
+
 .social-accounts {
     display: flex;
     justify-content: space-evenly;
@@ -119,6 +123,37 @@ section {
     border-radius: 50%;
     background-color:blue;
 }
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+  }
+  .instructions > svg {
+    margin-right: 0.25rem;
+  }
+  
+  .offscreen {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+  }
+  
+  .invalid {
+    color: red;
+    margin-left: 0.25rem;
+  }
 .centered {
   position: absolute;
   top: 50%;

@@ -3,7 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 import '../App.css';
 
-const Nav = () => {
+const Nav = ({backgroundColor}) => {
+  const style = {
+    backgroundColor: backgroundColor ? backgroundColor : "#00004D"
+  }
   const location = useLocation();
 
     const { pathname } = location;
@@ -11,7 +14,7 @@ const Nav = () => {
     const splitLocation = pathname.split("/");
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light mb-5 p-4 fixed-top" style={{backgroundColor: "blue"}}>
+        <nav className="navbar navbar-expand-lg navbar-light mb-5 p-4 fixed-top" style={style}>
   <div className="container">
               <Link className="links" to="/">
                 <Logo/>

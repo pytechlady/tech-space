@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({text, color, backgroundColor, width, marginBottom, marginTop, marginLeft, border}) => {
+const Button = ({text, color, backgroundColor, width, marginBottom, marginTop, marginLeft, border, disabled = false }) => {
     const style = {
         backgroundColor: backgroundColor ? backgroundColor : "#fff",
         color: color ? color : "#000",
@@ -11,7 +11,7 @@ const Button = ({text, color, backgroundColor, width, marginBottom, marginTop, m
         marginTop: marginTop ? marginTop :"0",
     }
   return (
-    <button style={style} className="btn btn-primary">
+    <button disabled={disabled} style={style} className="btn btn-primary">
         {text ? text : "button"}
     </button>
   )

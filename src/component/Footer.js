@@ -8,7 +8,7 @@ import TheLogo from '../assets/images/logo.svg';
 const Footer = ({ listStyleType, backgroundColor}) => {
     const style = {
         listStyleType: listStyleType ? listStyleType : "none",
-        backgroundColor: backgroundColor ? backgroundColor : "#4c6b9f"
+        backgroundColor: backgroundColor ? backgroundColor : "#00004D"
     }
     return (
             <footer className="p-5" style={style}>
